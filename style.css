@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* her yere uygular */
+    font-family: 'Lora', serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+
+.navbar {
+    background: radial-gradient(circle at 10% 30%,
+            /* yuvarlak kismin  10% olan saga-saol hiza 30% olan yukari asagi hiza*/
+            rgb(90, 92, 106) 8%,
+            rgb(32, 45, 58) 81.3%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 50px;
+    align-items: center;
+    /* üstteki kısım (header) */
+    position: fixed;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* sol üst kısım için */
+}
+
+.navbar .menu {
+
+    /* ortadaki menü kısmı */
+
+}
+
+.navbar .menu ul {
+    display: flex;
+    gap: 50px;
+
+
+
+
+}
+
+.navbar .menu ul a {
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+
+
+
+}
+
+.navbar .menu ul li :hover{
+    color: #940041;
+    transition: all ease 0.3s;
+
+
+
+}
+
+
+.navbar .menu ul li {
+    list-style-type: none;
+    /* listenin başındaki noktaları kaldırır */
+    ;
+
+}
+
+
+.navbar .action {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar .action i {
+    color: white;
+}
+
+.navbar .action button {
+    background: #940041;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 0px 100px 50px;
+    background: black;
+
+}
+
+.banner .left {
+    width: 80%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    padding-top: 90px;
+
+
+
+}
+
+.banner .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* resmin pixeliyle oynamaz ama cover eder */
+}
+
+.banner .left h1 {
+    font-size: 58px;
+    font-weight: 600;
+}
+
+.banner .left h3 {
+    font-weight: 300;
+}
+
+.left button {
+    border: 3px solid #940041;
+    background-color: #6f0030;
+    color: white;
+    border-radius: 10px;
+    padding: 0px 0 0px 5px;
+    margin-top: 60px;
+}
+
+.left button i {
+    background-color: #940041;
+    padding: 10px;
+
+
+}
+
+/* card kısmı */
+.product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background-color: black;
+    background-image: url("https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80");
+    padding: 80px 50px;
+    align-items: center;
+}
+
+.product .cards {
+    display: flex;
+    flex-direction: row;
+    width: 100;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.product .cards .card {
+    border-radius: 20px;
+}
+
+.product h1 span {
+
+    color: #940041;
+}
+
+.product h1 {
+
+    margin-bottom: 50px;
+}
+
+.card .card_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #940041;
+
+}
+
+.product button {
+    background: #060506;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+
+.card_content_process {
+    background-color: #940041;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.8) 70%, black),
+    url("images/back.png");
+}
+
+.abouts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    padding: 50px 50px;
+    gap: 20px;
+
+}
+
+.threecards {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+
+.abouts p {
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    padding: 0px 20px;
+
+}
+.abouts i {
+    color: white;}
+
+.about h1 span {
+
+    color: #940041;
+    margin-right: 20px;
+
+}
+
+.about h1 {
+
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+}
+
+.abouts h3{
+    color: #940041;
+    font-weight: 900;
+}
+
+.sponsor{
+    background-color: black;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.sponsor h1 span {
+
+    color: #940041;
+    margin-right: 20px;
+}
+.sponsor h1  {
+    color: white;
+    margin-bottom: 50px;
+
+    
+}
+.sponsor img{
+    padding: 10px;
+    margin: 5px;
+
+    
+}
+
+.sponsor img:nth-child(even){
+    background-color: #141b22;
+}
+
+/* Footer */
+
+.footer{
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.15) 0%,
+        rgba(0, 0, 0, 0.15) 100%
+      ),
+      radial-gradient(
+          at top center,
+          rgba(255, 255, 255, 0.4) 0%,
+          rgba(0, 0, 0, 0.4) 120%
+        )
+        #989898;
+    border: 4px solid blue;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    gap: 50px;
+    padding: 30px 30px;
+
+}
+
+.footer_left{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.footer_left i{
+    font-size: 20px;
+    transition: ease 0.3s;/* ease geçiş hızını belirtir */
+    padding: 5px;
+    
+}
+.footer_left .logo{
+    
+    display: flex;
+    align-items: center;
+}
+
+.footer_left i:hover{
+    color: #940041;
+    transform: translateX(8px);/* x eksininde hareket ettirir */
+    
+}
+
+
+
+.footer_right{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.footer_right ul li{
+    list-style-type: none;
+    padding: 3px; 
+    width: 200px;
+    color: white;  
+    transition: all ease 0.4s; 
+}
+
+.footer_right ul li:hover{
+    color: rgb(192, 16, 130);
+    transform: translateX(-20px);
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.footer_right ul li:nth-child(1){
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.footer_right ul li:nth-child(1):hover{
+    
+color: rgb(192, 16, 130);
+}
+/* sadece ekran için ayarlar */
+
+@media only screen and (max-width:768px) {
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        transition: all ease 0.5s;
+    }
+    
+}
